@@ -31,3 +31,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 });
 
 $('.newsletter').parallax({ imageSrc: '../img/newsletter-bg.jpg' });
+
+const menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', () => {
+    document
+        .querySelector('.navbar-bottom')
+        .classList.toggle('navbar-bottom--visible');
+});
