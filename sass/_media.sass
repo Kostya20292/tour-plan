@@ -14,6 +14,14 @@
                 height: 100%
                 object-fit: cover
 
+    .packages
+        &__wrapper
+            justify-content: center
+        &-card
+            margin-bottom: 30px
+            &:nth-child(even)
+                margin-right: 29px
+
     .card
         width: 230px
         height: 230px
@@ -104,6 +112,17 @@
             &-form
                 grid-column: span 5
                 grid-row: 4
+
+    .modal
+        &__dialog
+            padding: 33px 20px
+        &__button
+            display: block
+            margin: 0 auto
+        &__info
+            display: block
+            text-align: center
+            margin: 10px 0 0
 
 @media (max-width: 768px)
     .container
@@ -203,7 +222,24 @@
     .map
         width: 100%
 
+    .packages
+        &-primary
+            flex-direction: column
+            width: 350px
+            &__image
+                height: 250px
+                & img
+                    width: 100%
+                    height: 100%
+            &__info
+
+        &-card
+            &:nth-child(even)
+                margin-right: 0
+
+
     .newsletter
+        padding-top: 76px
         &-wrapper
             max-width: 576px
             width: 92%
@@ -235,6 +271,9 @@
         height: 255px
 
     .footer
+        padding-top: 70px
+        &-wrapper
+            margin-bottom: 30px
         &__input
             flex-basis: 100%
 
@@ -242,11 +281,19 @@
     .logo
         width: 99px
 
+    .search
+        &__input
+            width: 300px
+
     .hotel
         &__slider
             margin-bottom: 20px
         &-slider
             height: 250px
+
+    .packages
+        &__title
+            font-size: 30px
 
     .newsletter
         padding: 76px 0 83px
@@ -258,6 +305,10 @@
             &__strong
                 font-size: 30px
                 line-height: 38px
+
+    .reviews
+        &__title
+            font-size: 30px
 
     .subscribe
         width: 100%
@@ -296,3 +347,7 @@
             align-items: center
             &__list
                 margin-bottom: 20px
+
+    .modal
+        &__dialog
+            width: 90%
